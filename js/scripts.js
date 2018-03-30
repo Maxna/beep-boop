@@ -11,20 +11,27 @@ function beepConverter(inputValue) {
     result = "Beep!";
   } else result = inputValue;
 
-  debugger;
-
   return result;
 }
 
 $(document).ready(function() {
   $("#beepConverter").submit(function(event) {
   event.preventDefault();
-
+  // var answer = ["I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", "Beep!"]
   var inputValue = $("#userInput").val();
-  var userInputData = parseInt($("#userInput").val());
+  // var userInputData = parseInt($("#userInput").val());
   var retort = beepConverter(inputValue);
 
-  
+  if (retort === "I'm sorry, Dave. I'm afraid I can't do that.") {
+    $(".dave").show();
+  } else if (retort === "Boop!") {
+    $(".boop").show();
+  } else if (retort === "Beep!") {
+    $(".beep").show();
+  } else
+    $('#userInput').show();
+
+    return retort;
 
   });
 });
