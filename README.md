@@ -33,9 +33,9 @@ _Feel free to email me at [nardoni59@gmail.com](mailto:nardoni59@gmail.com) if y
 | :-------------     | :------------- | :------------- |
 | Program replaces 0 with "Beep!" | 0 | "Beep!" |
 | Program replaces 1 with "Boop!" | 1 | "Boop!" |
-| Program replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that." (most important rule)| 9 | "I'm sorry, Dave. I'm afraid I can't do that." |
-| Program replaces any number containing 0 with "Beep!" | 250 | "Beep!" |
-| Program replaces any number containing 1 with "Boop!" (overrides previous rule) | 5551 | "Boop!" |
+| Program replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that." (most important rule)| 3 | "Beep, Boop, 2, I'm sorry, Dave. I'm afraid I can't do that." |
+| Program replaces any number 0 with "Beep" | 2 | "Beep, 1, 2" |
+| Program replaces any number 1 with "Boop" (overrides previous rule) | 2 | "Beep, Boop, 2" |
 
 
 ### Link

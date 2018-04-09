@@ -10,16 +10,14 @@
   </head>
   <body>
     <div class="container-fluid">
+      <h2>Beep Converter</h2>
       <form id="beepConverter" action="index.html" method="post">
         <label for="">Hello, please enter a number below.</label>
-        <input id="userInput" type="text" name="userInput" value="">
+        <input id="userInput" type="number" name="userInputName">
         <button type="submit" name="button">Click here to return your result.</button>
       </form>
       <div>
-        <p class="dave">I'm sorry, Dave. I'm afraid I can't do that.</p>
-        <p class="boop">Boop!</p>
-        <p class="beep">Beep!</p>
-        <p class="number"></p>
+        <p id="output"></p>
       </div>
     </div>
   </body>
