@@ -19,8 +19,8 @@ $(document).ready(function() {
   $("#beepConverter").submit(function(event) {
     event.preventDefault();
   var inputValue = $("#userInput").val();
-  $("#boop").text(beepConverter(userInput));
-  $(".output").show();
+  $("#boop").text(beepConverter(inputValue));
+  $("#output").show();
 
   });
 });
